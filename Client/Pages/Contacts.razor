@@ -1,0 +1,69 @@
+@page "/contacts"
+
+@using BlazingChat.Shared
+@using BlazingChat.ViewModels
+@inject NavigationManager NavigationManager
+@inject IContactViewModel contactViewModel
+
+@* <PageTitle>Chat Contacts</PageTitle>
+
+    <h2>Below are your contact details</h2>
+
+    <div class="container">
+
+    <div class="row">
+    <div class="col-25">
+    <input type="text" placeholder="Search Hint">
+    </div>
+    <div class="col-75">
+    <button class="btn btn-primary">Search</button>
+    </div>
+    </div>
+    <br>
+
+    @foreach (var contact in contactViewModel._contactList!)
+    {
+    <a href="/chat/@contact.FirstName">@contact.FirstName <span>&nbsp;&nbsp;</span> @contact.LastName <br></a>
+    }
+    </div> *@
+
+
+<h2><b>Contacts</b></h2>
+<hr />
+
+<div class="col-12">
+    <div class="col-12 row">
+        <input type="text" class="col-9 form-control" placeholder="search" />
+        <span>&nbsp;</span><button class="btn btn-primary">Search</button>
+    </div>
+    <br />
+
+    @if (contactViewModel!._contactList != null && contactViewModel!._contactList.Count() > 0)
+    {
+        @foreach (var contact in contactViewModel._contactList)
+        {
+            <a href="/chat/@contact.ContactId" class="list-group-item list-group-item-action flex-column align-items-start">
+                @contact.FirstName <span> </span> @contact.LastName
+            </a>
+        }
+    }
+</div>
+
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        await contactViewModel.getContactList();
+    }
+
+    public void OnClickItem()
+    {
+        NavigationManager.NavigateTo("/chat");
+    }
+
+    public void OnClickItem(string FirstName)
+    {
+        NavigationManager.NavigateTo("/chat/@FirstName");
+    }
+}

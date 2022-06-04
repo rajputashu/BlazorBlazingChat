@@ -1,0 +1,13 @@
+@* Route without passing parameter *@
+@page "/chat"
+
+@* Route with parameters : If we pass this will call else above one*@
+@page "/chat/{FirstName}"
+
+<h1> Welcome the Chat Page of @FirstName</h1>
+
+@code {
+
+    [Parameter]
+    public string? FirstName { get; set; }
+}

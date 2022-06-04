@@ -1,0 +1,12 @@
+D:\ARStuff\BlazorWorkSpace\BlazingChat\Shared\bin\Debug\net6.0\BlazingChat.Shared.deps.json
+D:\ARStuff\BlazorWorkSpace\BlazingChat\Shared\bin\Debug\net6.0\BlazingChat.Shared.dll
+D:\ARStuff\BlazorWorkSpace\BlazingChat\Shared\bin\Debug\net6.0\BlazingChat.Shared.pdb
+D:\ARStuff\BlazorWorkSpace\BlazingChat\Shared\obj\Debug\net6.0\BlazingChat.Shared.csproj.AssemblyReference.cache
+D:\ARStuff\BlazorWorkSpace\BlazingChat\Shared\obj\Debug\net6.0\BlazingChat.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\ARStuff\BlazorWorkSpace\BlazingChat\Shared\obj\Debug\net6.0\BlazingChat.Shared.AssemblyInfoInputs.cache
+D:\ARStuff\BlazorWorkSpace\BlazingChat\Shared\obj\Debug\net6.0\BlazingChat.Shared.AssemblyInfo.cs
+D:\ARStuff\BlazorWorkSpace\BlazingChat\Shared\obj\Debug\net6.0\BlazingChat.Shared.csproj.CoreCompileInputs.cache
+D:\ARStuff\BlazorWorkSpace\BlazingChat\Shared\obj\Debug\net6.0\BlazingChat.Shared.dll
+D:\ARStuff\BlazorWorkSpace\BlazingChat\Shared\obj\Debug\net6.0\refint\BlazingChat.Shared.dll
+D:\ARStuff\BlazorWorkSpace\BlazingChat\Shared\obj\Debug\net6.0\BlazingChat.Shared.pdb
+D:\ARStuff\BlazorWorkSpace\BlazingChat\Shared\obj\Debug\net6.0\ref\BlazingChat.Shared.dll

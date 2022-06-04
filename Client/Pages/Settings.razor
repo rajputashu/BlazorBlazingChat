@@ -1,0 +1,34 @@
+﻿@page "/settings"
+@using BlazingChat.Shared
+@using BlazingChat.ViewModels
+@inject ISettingsViewModel settingsViewModel
+
+
+<PageTitle>Setting Page</PageTitle>
+
+<h1>Setting Menus</h1>
+
+<div class="col-20">
+    <div class="col-12">
+        <input type="checkbox" @bind="@settingsViewModel.DarkTheme" name="DarkTheme" id="themeId">
+        <label>Dark Theme</label>
+
+        <br>
+        <input type="checkbox" @bind="@settingsViewModel.Notifications" name="Notification" id="notificationId">
+        <label>Notifications</label>
+
+    </div>
+
+</div>
+
+<div class="col-12">
+    <button class="btn btn-primary" @onclick=settingsViewModel.updateSettingDetails>Save Settings</button>
+</div>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        await settingsViewModel.getSettingDetails();
+    }
+}
